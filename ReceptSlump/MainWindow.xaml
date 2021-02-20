@@ -6,7 +6,26 @@
         xmlns:local="clr-namespace:ReceptSlump"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Bisque">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">Receptslump</Label>
+        <Label Grid.Row="0" Grid.Column="0" Margin="10,20,160,90">Lägg till recept</Label>
+        <TextBox Grid.Row="0" Grid.Column="0" Margin="10,43,110,77"></TextBox>
+        <Button Grid.Column="0" Grid.Row="0" Margin="170,43,19,77">Lägg till</Button>
+        <Label Grid.Row="1" Grid.Column="0" Margin="10,20,160,90">Ta bort recept</Label>
+        <Button Grid.Row="1" Grid.Column="0" Margin="10,43,170,77">Ta bort</Button>
+        <Label Grid.Row="2" Grid.Column="0" Margin="10,20,10,90">Slumpa fram recept</Label>
+        <Button Grid.Row="2" Grid.Column="0" Margin="10,40, 120,80">Slumpa</Button>
+        <ListBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10"></ListBox>
+
     </Grid>
 </Window>
